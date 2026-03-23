@@ -1,10 +1,12 @@
-import Image from "next/image";
+import { pixel } from "@/lib/fonts"
 
-export default function Home() {
+export default function HomePage() {
   return (
-
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <p>Hello World</p>
-    </div>
-  );
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <section className="space-y-4">
+        <h1 className={`text-6xl ${pixel.className}`}></h1>
+        
+      </section>
+    </main>
+  )
 }
