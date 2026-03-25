@@ -33,9 +33,11 @@ export function Header() {
                 Login
               </button>
             </Link>
-            <button className={`rounded-md bg-black px-3 py-1 text-base text-white ${pixel.className}`}>
-              Get Started
-            </button>
+            <Link href="/register">
+              <button className={`rounded-md bg-black px-3 py-1 text-base text-white ${pixel.className}`}>
+                Get Started
+              </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -56,13 +58,16 @@ export function Header() {
             <Link href="/about" className={`hover:text-gray-600 ${pixel.className}`}>
               About
             </Link>
-
-            <button className={`w-full rounded-md border px-3 py-2 text-left text-base ${pixel.className}`}>
-              Login
-            </button>
-            <button className={`w-full rounded-md bg-black px-3 py-2 text-left text-base text-white ${pixel.className}`}>
-              Get Started
-            </button>
+            <Link href="/login">
+              <button className={`w-full rounded-md border px-3 py-2 text-left text-base ${pixel.className}`}>
+                Login
+              </button>
+            </Link>
+            <Link href="/register">
+              <button className={`w-full rounded-md bg-black px-3 py-2 text-left text-base text-white ${pixel.className}`}>
+                Get Started
+              </button>
+            </Link>
           </div>
         )}
       </div>
